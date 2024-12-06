@@ -1,0 +1,9 @@
+DROP DATABASE IF EXISTS MessageDb;
+CREATE DATABASE MessageDb;
+USE MessageDb;
+
+CREATE TABLE messages (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    content VARCHAR(50) NOT NULL,
+    timestamp DATETIME NOT NULL
+);
